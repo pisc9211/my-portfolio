@@ -204,6 +204,10 @@ img {
     background-color: var(--main-white);
 }
 
+.row .tech-logo {
+    font-size: 90px;
+}
+
 /* FOOTER */
 
 footer {
