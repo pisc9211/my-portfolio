@@ -24,13 +24,18 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     background-color: var(--main-white);
-    border: 1px solid orange;
-    overflow: auto;
+    position: relative;
 }
 
 a {
     text-decoration: none;
     color: var(--main-dark);
+}
+
+/* REUSABLE */
+
+.section {
+    min-height: 400px;
 }
 
 /* HEADER */
@@ -40,11 +45,14 @@ a {
     padding: 20px 40px;
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 999;
-    border-bottom: 1px solid var(--pastel-orange);
     display: flex;
     justify-content: space-between;
     color: var(--main-dark);
+    background-color: var(--main-white);
+    opacity: .8;
 }
 
 .header-title {
@@ -91,10 +99,42 @@ img {
     text-align: center;
 }
 
+.welcome-message h1 {
+    opacity: 0;
+    animation: slideInFromTop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) .4s forwards;
+}
+
+.welcome-message a {
+    animation: slideInFromTop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s forwards;
+    opacity: 0;
+}
+
 .about-btn {
     border: 1px solid black;
     padding: 20px 40px;
     display: inline-block;
     margin: 30px auto 0px auto;
     border-radius: 5px;
+    font-weight: 500;
+    transition: font-weight .3s linear, transform .3s linear;
+    animation: slideInFromTop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s forwards;
+    /* opacity: 0; */
+}
+
+.about-btn:hover {
+    font-weight: 800;
+    transform: scale(1.3);
+}
+
+/* KEYFRAMES */
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
