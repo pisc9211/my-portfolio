@@ -14,6 +14,87 @@
 }
 
 body {
-    font-size: 14px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
+    background-color: #e3e3e3;
+    display: block;
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--main-white);
+    border: 1px solid orange;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-dark);
+}
+
+/* HEADER */
+
+.site-header {
+    min-height: 77px;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid var(--pastel-orange);
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-dark);
+}
+
+.header-title {
+    font-size: 1.8em;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar-list li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* COVER */
+
+.image {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(228, 230, 163, 0.4);
+    z-index: 5;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+}
+
+.about-btn {
+    border: 1px solid black;
+    padding: 20px 40px;
+    display: inline-block;
+    margin: 30px auto 0px auto;
+    border-radius: 5px;
 }
