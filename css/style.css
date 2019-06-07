@@ -1,0 +1,19 @@
+:root {
+    --main-dark: #101010;
+    --light-dark: #4c4d4f;
+    --pastel-sky: #9cd4e0;
+    --pastel-yellow: #e4e6a3;
+    --pastel-orange: #f09c23;
+    --main-white: #f3eff5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
