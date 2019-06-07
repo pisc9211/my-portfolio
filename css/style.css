@@ -45,7 +45,8 @@ a {
 }
 
 .active {
-    border-bottom: 2px solid var(--main-dark)
+    border-bottom: 2px solid var(--main-dark);
+    padding-bottom: 3px;
 }
 
 /* HEADER */
