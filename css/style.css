@@ -34,6 +34,7 @@ a {
 
 /* REUSABLE */
 
+
 .section {
     min-height: 400px;
     padding: 60px 40px;
@@ -52,6 +53,16 @@ a {
 .link {
     border-bottom: 2px solid var(--main-dark);
     padding-bottom: 2px;
+}
+
+.content-title::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #333;
+    width: 80px;
+    margin: 10px auto 0 auto;
+
 }
 
 /* HEADER */
@@ -139,14 +150,14 @@ img {
 
 /* PROFILE SECTION */
 
-.section::before {
+/* .section::before {
     content: "";
     border-top: 10px solid var(--pastel-orange);
     display: block;
     width: 30%;
     margin: 0 auto;
     border-radius: 10px;
-}
+} */
 
 .profile-picture {
     background: url(img/profile.jpg) no-repeat;
@@ -158,9 +169,10 @@ img {
 }
 
 .profile-content {
-    width: 40%;
+    text-align: center;
     margin: 0 auto;
     line-height: 1.6em;
+    width: 40%;
 }
 
 .profile-content h3 {
@@ -168,6 +180,18 @@ img {
 }
 
 
+/* TECHNOLOGIES SECTION */
+
+.technologies {
+    background-color: rgba(228, 230, 163, 0.4);
+}
+
+.technologies-content {
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.6em;
+    width: 40%;
+}
 
 
 /* FOOTER */
