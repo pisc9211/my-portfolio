@@ -193,6 +193,16 @@ img {
     width: 40%;
 }
 
+.technologies-info {
+    width: 70%;
+    border: 1px solid black;
+    margin: 40px auto;
+}
+
+.tech-logo {
+    width: 100px;
+    background-color: var(--main-white);
+}
 
 /* FOOTER */
 
