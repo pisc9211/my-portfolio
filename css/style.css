@@ -152,12 +152,23 @@ img {
     margin: 40px auto;
 }
 
-/* .profile-picture::before {
-    content: "";
-    border-top: 5px groove blue;
-    display: block;
-    padding-top: 20px;
-} */
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: var(--main-dark);
+    color: var(--main-white);
+    padding: 20px 0;
+}
+  
+i {
+    font-size: 24px;
+    margin: 10px;
+}
+
+
 
 
 
