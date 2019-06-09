@@ -195,18 +195,63 @@ img {
 
 .technologies-info {
     width: 70%;
-    border: 1px solid black;
     margin: 40px auto;
 }
 
-.tech-logo {
-    width: 100px;
-    background-color: var(--main-white);
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .row .tech-logo {
     font-size: 90px;
+    justify-self: center;
+    margin: 10px 0;
 }
+
+.tech-logo {
+    width: 200px;
+    height: 200px;
+    transform: scale(0.8);
+}
+
+.tech-logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--main-white);
+}
+
+.tech-logo img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.tech-logo p {
+    font-size: 24px;
+}
+
+/* CONTACT */
+
+.contact-info {
+    margin: 20px 0px;
+}
+
+.contact-info p {
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.contact-info h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.contact-info h5 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
 
 /* FOOTER */
 
@@ -221,6 +266,53 @@ i {
     font-size: 24px;
     margin: 10px;
 }
+
+
+/* ---------- ABOUT PAGE ---------- */
+
+.title {
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.title:before,
+.title:after {
+    background-color: var(--main-dark);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 40px;
+}
+
+.title:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.title:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.timeline {
+    border: 1px solid black;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.item {
+    border: 1px solid black;
+}
+
+
 
 
 
