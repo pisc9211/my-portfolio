@@ -80,6 +80,7 @@ a {
     color: var(--main-dark);
     background-color: var(--main-white);
     opacity: .8;
+    border-bottom: 1px solid grey;
 }
 
 .header-title {
@@ -300,9 +301,9 @@ i {
 
 .timeline {
     border: 1px solid black;
-    width: 50%;
+    width: 80%;
     height: 500px;
-    margin: 0 auto;
+    margin: 40px auto 10px auto;
     display: grid;
     grid-template-columns: repeat(15, auto);
     grid-template-rows: repeat(15, auto);
@@ -310,13 +311,13 @@ i {
 
 .item {
     border: 1px solid black;
-    align-self: center;
-    background-color: #80cbc4;
     font-size: 24px;
-    height: 40px;
-    width: 40px;
-    padding: 10px auto;
     align-items: center;
+}
+
+.l {
+    background-color: #333;
+    color: var(--main-white);
 }
 
 
