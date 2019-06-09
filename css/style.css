@@ -322,6 +322,39 @@ i {
 
 
 
+/* -------- Gallery Page -------- */
+
+.gallery {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: 22%;
+    margin: 10px auto;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+.gallery-item img {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-in-out 0s;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+
 
 /* KEYFRAMES */
 
