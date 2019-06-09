@@ -299,27 +299,12 @@ i {
     margin-right: -50%;
 }
 
-.timeline {
-    border: 1px solid black;
+.about-content {
     width: 80%;
-    height: 500px;
-    margin: 40px auto 10px auto;
-    display: grid;
-    grid-template-columns: repeat(15, auto);
-    grid-template-rows: repeat(15, auto);
+    margin: 30px auto;
+    font-size:18px;
+    line-height: 1.5em;
 }
-
-.item {
-    border: 1px solid black;
-    font-size: 24px;
-    align-items: center;
-}
-
-.l {
-    background-color: #333;
-    color: var(--main-white);
-}
-
 
 
 /* -------- Gallery Page -------- */
