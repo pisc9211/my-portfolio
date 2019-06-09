@@ -300,21 +300,24 @@ i {
 
 .timeline {
     border: 1px solid black;
-    width: 80%;
+    width: 50%;
     height: 500px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(15, auto);
+    grid-template-rows: repeat(15, auto);
 }
 
 .item {
     border: 1px solid black;
+    align-self: center;
+    background-color: #80cbc4;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    padding: 10px auto;
+    align-items: center;
 }
-
-
-
-
 
 
 
